@@ -43,12 +43,24 @@ public class TripsFragment extends Fragment {
 
 
 
-        tripsList.add(new Trips("Sajek Tour","View changing tour of my life"));
-        recyclerView = recyclerView.findViewById(R.id.tripsRecyclerView);
+
+        recyclerView = view.findViewById(R.id.tripsRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         tripsList = new ArrayList<>();
-        adapter = new TripsAdapter(tripsList,this);
+        adapter = new TripsAdapter(tripsList,getContext());
         recyclerView.setAdapter(adapter);
+
+        tripsList.add(new Trips("Sajek Tour","View changing tour of my life"));
+        tripsList.add(new Trips("Sajek Tour","View changing tour of my life"));
+        tripsList.add(new Trips("Sajek Tour","View changing tour of my life"));
+        tripsList.add(new Trips("Sajek Tour","View changing tour of my life"));
+        tripsList.add(new Trips("Sajek Tour","View changing tour of my life"));
+        tripsList.add(new Trips("Sajek Tour","View changing tour of my life"));
+        tripsList.add(new Trips("Sajek Tour","View changing tour of my life"));
+        tripsList.add(new Trips("Sajek Tour","View changing tour of my life"));
+        tripsList.add(new Trips("Sajek Tour","View changing tour of my life"));
+        tripsList.add(new Trips("Sajek Tour","View changing tour of my life"));
+        tripsList.add(new Trips("Sajek Tour","View changing tour of my life"));
         adapter.notifyDataSetChanged();
 
        return view;

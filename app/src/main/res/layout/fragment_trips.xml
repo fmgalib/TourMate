@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TripsFragment">
+    tools:context=".TripsFragment"
+    android:background="#7B7D7D">
+
+
+
+
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -11,4 +16,17 @@
         android:layout_height="wrap_content"
         android:id="@+id/tripsRecyclerView"/>
 
-</FrameLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/ic_add_black_24dp"/>
+
+
+
+</RelativeLayout>

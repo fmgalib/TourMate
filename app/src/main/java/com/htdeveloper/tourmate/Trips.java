@@ -12,8 +12,6 @@ public class Trips {
         return about;
     }
 
-    public Trips() {
-    }
 
     public Trips(String name, String about) {
         this.name = name;

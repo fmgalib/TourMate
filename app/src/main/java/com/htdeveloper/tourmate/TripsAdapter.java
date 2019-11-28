@@ -13,13 +13,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class TripsAdapter extends RecyclerView.Adapter<TripsAdapter.ViewHolder> {
 
-    public TripsAdapter(List<Trips> tripsList, TripsFragment context) {
+    private List <Trips>tripsList;
+    private Context context;
+
+    public TripsAdapter(List<Trips> tripsList, Context context) {
         this.tripsList = tripsList;
         this.context = context;
     }
-
-    private List<Trips>tripsList;
-    private Context context;
 
     @NonNull
     @Override
